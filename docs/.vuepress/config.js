@@ -1,4 +1,4 @@
-const interviewConfig = {
+const InterviewConfig = {
   path: '/interview/',
   title: '前端面试题整理',
   collapsable: true, // 可选的, 默认值是 true,
@@ -30,7 +30,7 @@ const interviewConfig = {
     }
   ]
 }
-const vueCodeStudyConfig = {
+const VueCodeStudyConfig = {
   path: '/vue-code-stutdy/',
   title: 'Vue源码学习',
   collapsable: true, // 可选的, 默认值是 true,
@@ -44,9 +44,23 @@ const LifeArticlesConfig = {
   sidebarDepth: 3,    // 可选的, 默认值是 1
 }
 
+const TechNotesConfig = {
+  path: '/tech-notes/',
+  title: '技术笔记',
+  collapsable: true, // 可选的, 默认值是 true,
+  sidebarDepth: 3,    // 可选的, 默认值是 1
+  children: [
+    {
+      title: '防抖与节流',
+      path: '/tech-notes/throttle-and-debounce'
+    },
+  ]
+}
+
 const configArr = [
-  interviewConfig,
-  vueCodeStudyConfig,
+  TechNotesConfig,
+  InterviewConfig,
+  VueCodeStudyConfig,
   LifeArticlesConfig
 ]
 
