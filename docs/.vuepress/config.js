@@ -54,6 +54,10 @@ const TechNotesConfig = {
       title: '防抖与节流',
       path: '/tech-notes/throttle-and-debounce'
     },
+    {
+      title: '浏览器与Http缓存',
+      path: '/tech-notes/browser-and-http-memory'
+    },
   ]
 }
 
