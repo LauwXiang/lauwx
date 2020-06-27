@@ -1,6 +1,6 @@
 module.exports = {
   dest: './docs/.vuepress/dist/',
-  base: 'https:///https://github.com/LauwXiang/LauwXiang.github.io/',
+  base: '/',
   title: 'LauwXiang Blog',
   description: '前端',
   themeConfig: {
