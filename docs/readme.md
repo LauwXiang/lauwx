@@ -4,7 +4,7 @@ heroImage: /icon.jpeg
 heroText: LauwX的blog
 tagline: 
 actionText: 马上进入 →
-actionLink: /interview/
+actionLink: /tech-notes/
 features:
 - title: 日常总结
   details: 以Markdown为中心，专注于日常问题及技巧总结。
