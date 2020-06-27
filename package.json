@@ -6,5 +6,8 @@
     "dev": "vuepress dev docs",
     "build": "vuepress build docs",
     "deploying": "bash deploy.sh"
+  },
+  "dependencies": {
+    "vuepress-plugin-helper-live2d": "^1.0.2"
   }
 }
