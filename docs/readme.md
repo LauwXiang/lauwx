@@ -1,8 +1,8 @@
 ---
 home: true
 heroImage: /icon.jpeg
-heroText: LauwXiang的blog
-tagline: 一点一滴都是进步
+heroText: LauwX的blog
+tagline: 
 actionText: 马上进入 →
 actionLink: /interview/
 features:
