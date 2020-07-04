@@ -17,7 +17,6 @@ const throttle = (func, wait = 50) => {
       lastTime = now
       func.apply(this, args)
     }
-    
   }
 }
 
@@ -28,6 +27,8 @@ setInterval(
   1
 )
 ```
+
+---
 
 ---
 
@@ -49,6 +50,25 @@ const debounce = (func, wait = 50) => {
     timer = setTimeout(() => {
       func.apply(this, args)
     }, wait)
+  }
+}
+```
+
+---
+
+---
+
+### 劫持函数
+
+假设有一个被业务广泛使用的函数，我们是否能够在既不更改调用它的业务代码，也不更改该函数源码的前提下，在其执行前后注入一段我们自定义的逻辑呢？
+
+```js
+function withHookAfter(originalFn,hookFn){
+  return function(){
+    //下面的arguments为return的函数执行时传的参数
+    const output = originalFn.apply(this,arguments)
+    hookFn.apply(this,arguments)
+    return output
   }
 }
 ```
