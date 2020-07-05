@@ -1,4 +1,5 @@
-const live2d = require('./plugins/live2d')
+const fs = require('fs')
+const readDir = fs.readdirSync('./')
 const InterviewConfig = {
 	path: '/interview/',
 	title: '前端面试题整理',
@@ -59,6 +60,10 @@ const TechNotesConfig = {
 			title: '浏览器与Http缓存',
 			path: '/tech-notes/browser-and-http-memory'
 		},
+		{
+			title: '关于图片的奇奇怪怪知识点，常用10大图片js库',
+			path: '/tech-notes/image-base-js'
+		}
 	]
 }
 
