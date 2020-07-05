@@ -1,5 +1,4 @@
-const fs = require('fs')
-const readDir = fs.readdirSync('./')
+
 const InterviewConfig = {
 	path: '/interview/',
 	title: '前端面试题整理',
@@ -67,8 +66,22 @@ const TechNotesConfig = {
 	]
 }
 
+const AlgorithmConfig = {
+	path: '/algorithm/',
+	title: '数据结构与算法',
+	collapsable: true, // 可选的, 默认值是 true,
+	sidebarDepth: 3,    // 可选的, 默认值是 1
+	children: [
+		{
+			title: '数据结构与算法基础入门',
+			path: '/algorithm/数据结构与算法基础入门'
+		},
+	]
+}
+
 const configArr = [
 	TechNotesConfig,
+	AlgorithmConfig,
 	InterviewConfig,
 	VueCodeStudyConfig,
 	LifeArticlesConfig
